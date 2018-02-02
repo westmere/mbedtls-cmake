@@ -125,6 +125,6 @@ add_library(${mbedtls_object_target} OBJECT ${src_tls})
 set_target_properties(${mbedtls_object_target} PROPERTIES OUTPUT_NAME mbedtls)
 # target_link_libraries(${mbedtls_object_target} ${libs} ${mbedx509_object_target})
 
-install(TARGETS ${mbedtls_object_target} ${mbedx509_object_target} ${mbedcrypto_object_target}
-        DESTINATION ${LIB_INSTALL_DIR}
-        PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
+# install(TARGETS ${mbedtls_object_target} ${mbedx509_object_target} ${mbedcrypto_object_target}
+#         DESTINATION ${LIB_INSTALL_DIR}
+#         PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE)
