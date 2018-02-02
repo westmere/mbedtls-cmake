@@ -71,7 +71,7 @@ set(src_x509
 
 set(src_tls
     mbedtls/library/debug.c
-    mbedtls/library/net_sockets.c
+#     mbedtls/library/net_sockets.c
     mbedtls/library/ssl_cache.c
     mbedtls/library/ssl_ciphersuites.c
     mbedtls/library/ssl_cli.c
