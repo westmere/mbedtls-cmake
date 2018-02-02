@@ -115,7 +115,7 @@ set(mbedcrypto_object_target "mbedcrypto-object")
 
 add_library(${mbedcrypto_object_target} OBJECT ${src_crypto})
 set_target_properties(${mbedcrypto_object_target} PROPERTIES OUTPUT_NAME mbedcrypto)
-target_link_libraries(${mbedcrypto_object_target} ${libs})
+# target_link_libraries(${mbedcrypto_object_target} ${libs})
 
 add_library(${mbedx509_object_target} OBJECT ${src_x509})
 set_target_properties(${mbedx509_object_target} PROPERTIES OUTPUT_NAME mbedx509)
