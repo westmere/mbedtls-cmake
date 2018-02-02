@@ -109,9 +109,9 @@ endif()
 #     message(FATAL_ERROR "Need to choose static or shared mbedtls build!")
 # endif(NOT USE_OBJECT_MBEDTLS_LIBRARY AND NOT USE_SHARED_MBEDTLS_LIBRARY)
 
-set(mbedtls_object_target "mbedtls")
-set(mbedx509_object_target "mbedx509")
-set(mbedcrypto_object_target "mbedcrypto")
+set(mbedtls_object_target "mbedtls-object")
+set(mbedx509_object_target "mbedx509-object")
+set(mbedcrypto_object_target "mbedcrypto-object")
 
 add_library(${mbedcrypto_object_target} OBJECT ${src_crypto})
 set_target_properties(${mbedcrypto_object_target} PROPERTIES OUTPUT_NAME mbedcrypto)
