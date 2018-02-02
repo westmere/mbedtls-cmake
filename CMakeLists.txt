@@ -119,11 +119,11 @@ set_target_properties(${mbedcrypto_object_target} PROPERTIES OUTPUT_NAME mbedcry
 
 add_library(${mbedx509_object_target} OBJECT ${src_x509})
 set_target_properties(${mbedx509_object_target} PROPERTIES OUTPUT_NAME mbedx509)
-target_link_libraries(${mbedx509_object_target} ${libs} ${mbedcrypto_object_target})
+# target_link_libraries(${mbedx509_object_target} ${libs} ${mbedcrypto_object_target})
 
 add_library(${mbedtls_object_target} OBJECT ${src_tls})
 set_target_properties(${mbedtls_object_target} PROPERTIES OUTPUT_NAME mbedtls)
-target_link_libraries(${mbedtls_object_target} ${libs} ${mbedx509_object_target})
+# target_link_libraries(${mbedtls_object_target} ${libs} ${mbedx509_object_target})
 
 install(TARGETS ${mbedtls_object_target} ${mbedx509_object_target} ${mbedcrypto_object_target}
         DESTINATION ${LIB_INSTALL_DIR}
